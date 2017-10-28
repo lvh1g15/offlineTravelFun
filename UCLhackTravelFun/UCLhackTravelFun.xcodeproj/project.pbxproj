@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249E082B33C7A8A7B4A3996A /* Pods_UCLhackTravelFunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC1CC078361ADA23411092F /* Pods_UCLhackTravelFunUITests.framework */; };
 		44281D6B1FA4C449002467A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D6A1FA4C449002467A5 /* AppDelegate.swift */; };
 		44281D6D1FA4C449002467A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D6C1FA4C449002467A5 /* ViewController.swift */; };
 		44281D701FA4C449002467A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44281D6E1FA4C449002467A5 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		44281D751FA4C449002467A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44281D731FA4C449002467A5 /* LaunchScreen.storyboard */; };
 		44281D801FA4C449002467A5 /* UCLhackTravelFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D7F1FA4C449002467A5 /* UCLhackTravelFunTests.swift */; };
 		44281D8B1FA4C449002467A5 /* UCLhackTravelFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D8A1FA4C449002467A5 /* UCLhackTravelFunUITests.swift */; };
+		44281D9A1FA4CD67002467A5 /* LocationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D991FA4CD67002467A5 /* LocationDataView.swift */; };
+		44281D9C1FA4D1B1002467A5 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 44281D9B1FA4D1B1002467A5 /* earth.png */; };
+		637432D6270008E165107C76 /* Pods_UCLhackTravelFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */; };
+		A345D29AB2964F46DA8AC636 /* Pods_UCLhackTravelFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CBE28BE761E952862EC470A /* Pods-UCLhackTravelFunUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunUITests/Pods-UCLhackTravelFunUITests.release.xcconfig"; sourceTree = "<group>"; };
 		44281D671FA4C449002467A5 /* UCLhackTravelFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCLhackTravelFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44281D6A1FA4C449002467A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44281D6C1FA4C449002467A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 		44281D861FA4C449002467A5 /* UCLhackTravelFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCLhackTravelFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44281D8A1FA4C449002467A5 /* UCLhackTravelFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCLhackTravelFunUITests.swift; sourceTree = "<group>"; };
 		44281D8C1FA4C449002467A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44281D991FA4CD67002467A5 /* LocationDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataView.swift; sourceTree = "<group>"; };
+		44281D9B1FA4D1B1002467A5 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		5034D8C6F03DB9932253ABC6 /* Pods-UCLhackTravelFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun.release.xcconfig"; sourceTree = "<group>"; };
+		9AE070542F95E92E97BEC4BE /* Pods-UCLhackTravelFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLhackTravelFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC1CC078361ADA23411092F /* Pods_UCLhackTravelFunUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLhackTravelFunUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F7286CFC75E415533FC6D6 /* Pods-UCLhackTravelFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun.debug.xcconfig"; sourceTree = "<group>"; };
+		BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLhackTravelFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57F3DA9E20397715C440532 /* Pods-UCLhackTravelFunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunUITests/Pods-UCLhackTravelFunUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB24420661317187E3530A0F /* Pods-UCLhackTravelFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A345D29AB2964F46DA8AC636 /* Pods_UCLhackTravelFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637432D6270008E165107C76 /* Pods_UCLhackTravelFunTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249E082B33C7A8A7B4A3996A /* Pods_UCLhackTravelFunUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2331FE69CDBE01CDAED021D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */,
+				A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */,
+				AFC1CC078361ADA23411092F /* Pods_UCLhackTravelFunUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44281D5E1FA4C449002467A5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +110,8 @@
 				44281D7E1FA4C449002467A5 /* UCLhackTravelFunTests */,
 				44281D891FA4C449002467A5 /* UCLhackTravelFunUITests */,
 				44281D681FA4C449002467A5 /* Products */,
+				A7BC3AA68705B4B15D18BDA1 /* Pods */,
+				2331FE69CDBE01CDAED021D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +128,12 @@
 		44281D691FA4C449002467A5 /* UCLhackTravelFun */ = {
 			isa = PBXGroup;
 			children = (
+				44281D981FA4CD48002467A5 /* frontpage */,
 				44281D6A1FA4C449002467A5 /* AppDelegate.swift */,
-				44281D6C1FA4C449002467A5 /* ViewController.swift */,
 				44281D6E1FA4C449002467A5 /* Main.storyboard */,
 				44281D711FA4C449002467A5 /* Assets.xcassets */,
 				44281D731FA4C449002467A5 /* LaunchScreen.storyboard */,
+				44281D9B1FA4D1B1002467A5 /* earth.png */,
 				44281D761FA4C449002467A5 /* Info.plist */,
 			);
 			path = UCLhackTravelFun;
@@ -125,6 +157,28 @@
 			path = UCLhackTravelFunUITests;
 			sourceTree = "<group>";
 		};
+		44281D981FA4CD48002467A5 /* frontpage */ = {
+			isa = PBXGroup;
+			children = (
+				44281D6C1FA4C449002467A5 /* ViewController.swift */,
+				44281D991FA4CD67002467A5 /* LocationDataView.swift */,
+			);
+			name = frontpage;
+			sourceTree = "<group>";
+		};
+		A7BC3AA68705B4B15D18BDA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7286CFC75E415533FC6D6 /* Pods-UCLhackTravelFun.debug.xcconfig */,
+				5034D8C6F03DB9932253ABC6 /* Pods-UCLhackTravelFun.release.xcconfig */,
+				EB24420661317187E3530A0F /* Pods-UCLhackTravelFunTests.debug.xcconfig */,
+				9AE070542F95E92E97BEC4BE /* Pods-UCLhackTravelFunTests.release.xcconfig */,
+				C57F3DA9E20397715C440532 /* Pods-UCLhackTravelFunUITests.debug.xcconfig */,
+				0CBE28BE761E952862EC470A /* Pods-UCLhackTravelFunUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44281D8F1FA4C449002467A5 /* Build configuration list for PBXNativeTarget "UCLhackTravelFun" */;
 			buildPhases = (
+				0D65E85836B0F4B67DCF0B97 /* [CP] Check Pods Manifest.lock */,
 				44281D631FA4C449002467A5 /* Sources */,
 				44281D641FA4C449002467A5 /* Frameworks */,
 				44281D651FA4C449002467A5 /* Resources */,
+				3A162F9F2B49723ED9EC3F50 /* [CP] Embed Pods Frameworks */,
+				2EDB52EDA8B65749059E56DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44281D921FA4C449002467A5 /* Build configuration list for PBXNativeTarget "UCLhackTravelFunTests" */;
 			buildPhases = (
+				91C5623AF1B94E1A3340C9EE /* [CP] Check Pods Manifest.lock */,
 				44281D771FA4C449002467A5 /* Sources */,
 				44281D781FA4C449002467A5 /* Frameworks */,
 				44281D791FA4C449002467A5 /* Resources */,
+				5B0AD6060B47FD53D074ACC6 /* [CP] Embed Pods Frameworks */,
+				5366CA0E454802081FD71C48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44281D951FA4C449002467A5 /* Build configuration list for PBXNativeTarget "UCLhackTravelFunUITests" */;
 			buildPhases = (
+				6059FBC46FE5CF7E3CD5FBF3 /* [CP] Check Pods Manifest.lock */,
 				44281D821FA4C449002467A5 /* Sources */,
 				44281D831FA4C449002467A5 /* Frameworks */,
 				44281D841FA4C449002467A5 /* Resources */,
+				5B4DADF6B687A73C583F5436 /* [CP] Embed Pods Frameworks */,
+				DAC7B199656E736392E3682A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44281D9C1FA4D1B1002467A5 /* earth.png in Resources */,
 				44281D751FA4C449002467A5 /* LaunchScreen.storyboard in Resources */,
 				44281D721FA4C449002467A5 /* Assets.xcassets in Resources */,
 				44281D701FA4C449002467A5 /* Main.storyboard in Resources */,
@@ -257,6 +321,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D65E85836B0F4B67DCF0B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2EDB52EDA8B65749059E56DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A162F9F2B49723ED9EC3F50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5366CA0E454802081FD71C48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0AD6060B47FD53D074ACC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B4DADF6B687A73C583F5436 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFunUITests/Pods-UCLhackTravelFunUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6059FBC46FE5CF7E3CD5FBF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91C5623AF1B94E1A3340C9EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC7B199656E736392E3682A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCLhackTravelFunUITests/Pods-UCLhackTravelFunUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44281D631FA4C449002467A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +466,7 @@
 			files = (
 				44281D6D1FA4C449002467A5 /* ViewController.swift in Sources */,
 				44281D6B1FA4C449002467A5 /* AppDelegate.swift in Sources */,
+				44281D9A1FA4CD67002467A5 /* LocationDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +618,7 @@
 		};
 		44281D901FA4C449002467A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F7286CFC75E415533FC6D6 /* Pods-UCLhackTravelFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JT5HQ7RT7B;
@@ -428,6 +632,7 @@
 		};
 		44281D911FA4C449002467A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5034D8C6F03DB9932253ABC6 /* Pods-UCLhackTravelFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JT5HQ7RT7B;
@@ -441,6 +646,7 @@
 		};
 		44281D931FA4C449002467A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB24420661317187E3530A0F /* Pods-UCLhackTravelFunTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +662,7 @@
 		};
 		44281D941FA4C449002467A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE070542F95E92E97BEC4BE /* Pods-UCLhackTravelFunTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +678,7 @@
 		};
 		44281D961FA4C449002467A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57F3DA9E20397715C440532 /* Pods-UCLhackTravelFunUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JT5HQ7RT7B;
@@ -485,6 +693,7 @@
 		};
 		44281D971FA4C449002467A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CBE28BE761E952862EC470A /* Pods-UCLhackTravelFunUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JT5HQ7RT7B;
@@ -516,6 +725,7 @@
 				44281D911FA4C449002467A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44281D921FA4C449002467A5 /* Build configuration list for PBXNativeTarget "UCLhackTravelFunTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +734,7 @@
 				44281D941FA4C449002467A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44281D951FA4C449002467A5 /* Build configuration list for PBXNativeTarget "UCLhackTravelFunUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +743,7 @@
 				44281D971FA4C449002467A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

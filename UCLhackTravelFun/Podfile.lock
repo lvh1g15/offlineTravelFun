@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.4.0)
+  - SnapKit (3.2.0)
+  - SwiftGifOrigin (1.6.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - SnapKit (~> 3.0)
+  - SwiftGifOrigin (~> 1.6.1)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+
+PODFILE CHECKSUM: cf7576d6451f1943d9663e1d70f59d43c4babbdb
+
+COCOAPODS: 1.2.1
