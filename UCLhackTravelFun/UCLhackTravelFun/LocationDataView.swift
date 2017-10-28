@@ -26,18 +26,19 @@ class Locationfetch {
         let getcontentbut = UIButton()
         self.getcontentbut = getcontentbut
 
-        superview.addSubview(getcontentbut)
+        view.addSubview(getcontentbut)
 
         getcontentbut.snp.makeConstraints({(makes) -> Void in
             makes.centerX.equalToSuperview()
-            makes.centerY.equalToSuperview().inset(-superview.layer.frame.height*0.2)
-            makes.width.equalTo(superview.layer.frame.width*0.4)
-            makes.height.equalTo(superview.layer.frame.height*0.2)
+            makes.centerY.equalToSuperview().inset(view.layer.frame.height*0.2)
+            makes.width.equalTo(view.layer.frame.width*0.4)
+            makes.height.equalTo(view.layer.frame.height*0.06)
         })
         
         getcontentbut.backgroundColor = UIColor.white
-        getcontentbut.setAttributedTitle(NSAttributedString(string: "Load", attributes: [NSFontAttributeName: UIFont(name: "Myriad", size: 15.0)!, NSBackgroundColorAttributeName: UIColor(red: 34/255, green: 58/255, blue: 70/255, alpha: 1.0)]), for: .normal)
-        getcontentbut.layer.cornerRadius = 5.0
+        getcontentbut.setTitleColor(UIColor(red: 34/255, green: 58/255, blue: 70/255, alpha: 1.0), for: .normal)
+        getcontentbut.setAttributedTitle(NSAttributedString(string: "Load", attributes: [NSFontAttributeName: UIFont(name: "Avenir-Black", size: 25.0)!]), for: .normal)
+        getcontentbut.layer.cornerRadius = 15.0
         
         return getcontentbut
     }

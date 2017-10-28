@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let locationsetup = Locationfetch(superview: self.view)
         locationsetup.getcontentbut?.addTarget(self, action: #selector(tomainfeed(_:)), for: .touchUpInside)
-
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     func tomainfeed(_ sender: UIButton) {
         // set label title
+        print("hello")
     }
 }
 
