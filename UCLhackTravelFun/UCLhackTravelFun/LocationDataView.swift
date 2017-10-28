@@ -9,15 +9,18 @@
 import Foundation
 import SnapKit
 import UIKit
+import NVActivityIndicatorView
 
 class Locationfetch {
     
     var superview: UIView
     var traveltotext: UITextField?
+    var loadingfeed: NVActivityIndicatorView?
     
     init(superview: UIView) {
         self.superview = superview
         frontpageview(view: self.superview)
+        setuploadinganimation(view: self.superview)
     }
     
     func frontpageview(view: UIView) {
@@ -30,7 +33,7 @@ class Locationfetch {
         traveltotext.snp.makeConstraints({(makes) -> Void in
             makes.centerX.equalToSuperview()
             makes.centerY.equalToSuperview().inset(-view.layer.frame.height*0.2)
-            makes.width.equalTo(view.layer.frame.width*0.70)
+            makes.width.equalTo(view.layer.frame.width*0.75)
             makes.height.equalTo(view.layer.frame.height*0.1)
         })
         
@@ -41,6 +44,15 @@ class Locationfetch {
         traveltotext.font = UIFont(name: "Avenir-Black", size: 25.0)
         traveltotext.textColor = UIColor(red: 37/255, green: 67/255, blue: 80/255, alpha: 1.0)
         traveltotext.layer.cornerRadius = 35.0
-        
+    }
+    
+    func setuploadinganimation(view: UIView) {
+        let fetchstuffanime = NVActivityIndicatorView(frame: CGRect.zero, type: .ballClipRotatePulse, color: UIColor(red: 37/255, green: 67/255, blue: 80/255, alpha: 1.0), padding: 20.0)
+        view.addSubview(fetchstuffanime)
+        self.loadingfeed = fetchstuffanime
+        fetchstuffanime.snp.makeConstraints({(makes) -> Void in
+            makes.centerY.equalToSuperview().inset(-view.layer.frame.height*0.2)
+            makes.centerX.equalToSuperview().inset(view.layer.frame.width*0.27)
+        })
     }
 }

@@ -7,31 +7,24 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var gifearth: UIImageView!
-    
+    private var loadinganime: NVActivityIndicatorView!
 
     override func viewDidLoad() {
-
         super.viewDidLoad()
         let locationsetup = Locationfetch(superview: self.view)
         locationsetup.traveltotext?.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func tomainfeed(_ sender: UIButton) {
-        // set label title
+        self.loadinganime = locationsetup.loadingfeed
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
+        loadinganime.startAnimating()
+        
         return true
     }
 }

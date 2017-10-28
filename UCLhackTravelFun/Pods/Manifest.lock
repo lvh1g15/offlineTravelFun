@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.4.0)
+  - NVActivityIndicatorView (3.6.1)
   - SnapKit (3.2.0)
   - SwiftGifOrigin (1.6.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - NVActivityIndicatorView
   - SnapKit (~> 3.0)
   - SwiftGifOrigin (~> 1.6.1)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
 
-PODFILE CHECKSUM: cf7576d6451f1943d9663e1d70f59d43c4babbdb
+PODFILE CHECKSUM: 0d01300402a430ecfa4c4976b2f7f7894f5811c4
 
 COCOAPODS: 1.2.1
