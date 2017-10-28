@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import TwitterKit
 
-class mainfetchviewViewController: UITabBarController {
+class mainfetchviewViewController: UIViewController {
+    
+    var data: TWTRTweetView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         
     }

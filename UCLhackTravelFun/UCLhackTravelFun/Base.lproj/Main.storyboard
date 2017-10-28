@@ -38,16 +38,17 @@
                     </view>
                     <connections>
                         <outlet property="gifearth" destination="tzs-bJ-3lp" id="rwp-BN-QzY"/>
+                        <segue destination="Gi8-3S-kHE" kind="presentation" identifier="tomainview" id="JCf-Rc-NIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-318" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--datafeed-->
         <scene sceneID="2LH-Tl-gbO">
             <objects>
-                <viewController id="Gi8-3S-kHE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="datafeed" title="datafeed" id="Gi8-3S-kHE" customClass="mainfetchviewViewController" customModule="UCLhackTravelFun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e7B-5D-eCu"/>
                         <viewControllerLayoutGuide type="bottom" id="5ZT-m4-3yL"/>
