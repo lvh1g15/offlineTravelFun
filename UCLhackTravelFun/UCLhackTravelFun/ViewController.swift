@@ -8,15 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var gifearth: UIImageView!
+    
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
         let locationsetup = Locationfetch(superview: self.view)
-        locationsetup.getcontentbut?.addTarget(self, action: #selector(tomainfeed(_:)), for: .touchUpInside)
-        
+        locationsetup.traveltotext?.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,7 +28,11 @@ class ViewController: UIViewController {
     
     func tomainfeed(_ sender: UIButton) {
         // set label title
-        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
 }
 
