@@ -18,6 +18,8 @@
 		44281D9A1FA4CD67002467A5 /* LocationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D991FA4CD67002467A5 /* LocationDataView.swift */; };
 		44281D9C1FA4D1B1002467A5 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 44281D9B1FA4D1B1002467A5 /* earth.png */; };
 		44281D9E1FA53E78002467A5 /* mainfetchviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D9D1FA53E78002467A5 /* mainfetchviewViewController.swift */; };
+		44281DA01FA54872002467A5 /* dataCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281D9F1FA54872002467A5 /* dataCellTableViewCell.swift */; };
+		44281DA31FA54AB8002467A5 /* tweetcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44281DA21FA54AB8002467A5 /* tweetcell.xib */; };
 		637432D6270008E165107C76 /* Pods_UCLhackTravelFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */; };
 		A345D29AB2964F46DA8AC636 /* Pods_UCLhackTravelFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		44281D991FA4CD67002467A5 /* LocationDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataView.swift; sourceTree = "<group>"; };
 		44281D9B1FA4D1B1002467A5 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		44281D9D1FA53E78002467A5 /* mainfetchviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainfetchviewViewController.swift; sourceTree = "<group>"; };
+		44281D9F1FA54872002467A5 /* dataCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataCellTableViewCell.swift; sourceTree = "<group>"; };
+		44281DA21FA54AB8002467A5 /* tweetcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tweetcell.xib; sourceTree = "<group>"; };
 		5034D8C6F03DB9932253ABC6 /* Pods-UCLhackTravelFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun.release.xcconfig"; sourceTree = "<group>"; };
 		9AE070542F95E92E97BEC4BE /* Pods-UCLhackTravelFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLhackTravelFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +134,7 @@
 		44281D691FA4C449002467A5 /* UCLhackTravelFun */ = {
 			isa = PBXGroup;
 			children = (
-				44281D9D1FA53E78002467A5 /* mainfetchviewViewController.swift */,
+				44281DA11FA5487B002467A5 /* Mainview */,
 				44281D981FA4CD48002467A5 /* frontpage */,
 				44281D6A1FA4C449002467A5 /* AppDelegate.swift */,
 				44281D6E1FA4C449002467A5 /* Main.storyboard */,
@@ -167,6 +171,16 @@
 				44281D991FA4CD67002467A5 /* LocationDataView.swift */,
 			);
 			name = frontpage;
+			sourceTree = "<group>";
+		};
+		44281DA11FA5487B002467A5 /* Mainview */ = {
+			isa = PBXGroup;
+			children = (
+				44281D9F1FA54872002467A5 /* dataCellTableViewCell.swift */,
+				44281DA21FA54AB8002467A5 /* tweetcell.xib */,
+				44281D9D1FA53E78002467A5 /* mainfetchviewViewController.swift */,
+			);
+			name = Mainview;
 			sourceTree = "<group>";
 		};
 		A7BC3AA68705B4B15D18BDA1 /* Pods */ = {
@@ -302,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44281D9C1FA4D1B1002467A5 /* earth.png in Resources */,
+				44281DA31FA54AB8002467A5 /* tweetcell.xib in Resources */,
 				44281D751FA4C449002467A5 /* LaunchScreen.storyboard in Resources */,
 				44281D721FA4C449002467A5 /* Assets.xcassets in Resources */,
 				44281D701FA4C449002467A5 /* Main.storyboard in Resources */,
@@ -469,6 +484,7 @@
 			files = (
 				44281D6D1FA4C449002467A5 /* ViewController.swift in Sources */,
 				44281D6B1FA4C449002467A5 /* AppDelegate.swift in Sources */,
+				44281DA01FA54872002467A5 /* dataCellTableViewCell.swift in Sources */,
 				44281D9A1FA4CD67002467A5 /* LocationDataView.swift in Sources */,
 				44281D9E1FA53E78002467A5 /* mainfetchviewViewController.swift in Sources */,
 			);

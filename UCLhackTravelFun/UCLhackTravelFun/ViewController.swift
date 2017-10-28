@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tomainview" {
             (segue.destination as! mainfetchviewViewController).data = sender as? TWTRTweetView
+
         }
     }
 }

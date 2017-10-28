@@ -56,12 +56,43 @@
                     <view key="view" contentMode="scaleToFill" id="eht-Bd-x6A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1CJ-WV-ICg">
+                                <rect key="frame" x="0.0" y="93" width="375" height="574"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="574" id="pyt-Np-hrh"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Jlt-7g-s8e" customClass="dataCellTableViewCell" customModule="UCLhackTravelFun" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jlt-7g-s8e" id="mQS-5z-QPA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eht-Bd-x6A" id="ZeY-qo-7LB"/>
+                                    <outlet property="delegate" destination="eht-Bd-x6A" id="FCq-SF-0xQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1CJ-WV-ICg" firstAttribute="leading" secondItem="eht-Bd-x6A" secondAttribute="leading" id="AuN-zn-KuH"/>
+                            <constraint firstItem="5ZT-m4-3yL" firstAttribute="top" secondItem="1CJ-WV-ICg" secondAttribute="bottom" id="k9Q-A5-ur3"/>
+                            <constraint firstAttribute="trailing" secondItem="1CJ-WV-ICg" secondAttribute="trailing" id="zfm-go-Vni"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datatableview" destination="1CJ-WV-ICg" id="xqM-dA-lJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sr4-St-LTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="143"/>
+            <point key="canvasLocation" x="704.79999999999995" y="142.57871064467767"/>
         </scene>
     </scenes>
     <resources>
