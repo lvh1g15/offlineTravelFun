@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     func tomainfeed(_ sender: UIButton) {
         // set label title
-        print("hello")
+        
     }
 }
 
