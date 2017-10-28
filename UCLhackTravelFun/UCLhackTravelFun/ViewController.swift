@@ -8,6 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import TwitterKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -25,6 +26,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         loadinganime.startAnimating()
         
+        let client = TWTRAPIClient()
+        client.loadTweet(withID: "20") { (tweet, error) in
+            if let t = tweet {
+                let tweetView = TWTRTweetView(tweet: t)
+                self.performSegue(withIdentifier: "tomainview", sender: tweetView)
+            } else {
+                print("Failed to load Tweet: \(error?.localizedDescription ?? "")")
+            }
+        }
         return true
     }
 }

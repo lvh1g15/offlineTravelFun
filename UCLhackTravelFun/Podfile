@@ -10,6 +10,7 @@ target 'UCLhackTravelFun' do
   pod 'Alamofire’, ‘~> 4.0’
   pod 'SwiftGifOrigin', '~> 1.6.1'
   pod 'NVActivityIndicatorView'
+  pod 'TwitterKit'
 
   target 'UCLhackTravelFunTests' do
     inherit! :search_paths
