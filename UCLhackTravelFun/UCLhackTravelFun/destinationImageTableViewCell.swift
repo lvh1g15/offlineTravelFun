@@ -14,11 +14,13 @@ class destinationImageTableViewCell: UITableViewCell {
     @IBOutlet weak var destinationimageview: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
     
     func configureDestinationImageView(imageURL: String) {
+        print(imageURL)
         let url = URL(string: imageURL)
-        destinationimageview.kf.setImage(with: url)
+        let resource = ImageResource(downloadURL: url!, cacheKey: imageURL)
+        destinationimageview.kf.setImage(with: resource)
+//        destinationimageview.backgroundColor = UIColor.gray
     }
 }

@@ -23,11 +23,12 @@ class mainfetchviewViewController: UIViewController {
         self.datatableview.dataSource = self
         if let post = senderreceiver {
             tweetarray.append(post.tweetview)
-            photoarray = post.urlimagearray
+            photoarray = post.urlimageviewarray
             print(tweetarray, photoarray)
         }
-        prepcell()
+//        prepcell()
         prepcell2()
+        prepcell()
     }
     
     func prepcell() {
@@ -43,23 +44,19 @@ class mainfetchviewViewController: UIViewController {
 
 extension mainfetchviewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tweetarray.count + photoarray.count
+        return photoarray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tweet", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tweet", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
         guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "randomimage", for: indexPath) as? destinationImageTableViewCell else { return UITableViewCell() }
         
-        if state == true {
-            let imagecells = photoarray[indexPath.row]
-            cell2.configureDestinationImageView(imageURL: imagecells)
-            state = false
-            return cell2
-        } else {
-            let tweetcells = tweetarray[indexPath.row]
-            cell.configureCell(data: tweetcells)
-            state = true
-            return cell
-        }
+        let imagecells = photoarray[indexPath.row]
+        cell2.configureDestinationImageView(imageURL: imagecells)
+        return cell2
+
+//        let tweetcells = tweetarray[indexPath.row]
+//        cell.configureCell(data: tweetcells)
+//        return cell
     }
 }

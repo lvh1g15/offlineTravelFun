@@ -16,13 +16,9 @@ class dataCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
-        
     }
     
     func configureCell(data: TWTRTweetView) {
-        
         self.backview.addSubview(data)
-        
     }
 }

@@ -10,13 +10,14 @@ import UIKit
 import NVActivityIndicatorView
 import TwitterKit
 import Alamofire
+import Kingfisher
 
 class SenderObject {
-    var urlimagearray: [String]!
+    var urlimageviewarray: [String]!
     var tweetview: TWTRTweetView!
     
-    init(urlimagearray: [String], tweetview: TWTRTweetView) {
-        self.urlimagearray = urlimagearray
+    init(urlimageviewarray: [String], tweetview: TWTRTweetView) {
+        self.urlimageviewarray = urlimageviewarray
         self.tweetview = tweetview
     }
 }
@@ -47,14 +48,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 imagefetchobject.alamoFetch(completion: { response in
 
                     var urlimagearr: [String] = []
+                    var imageviewarr: [UIImageView] = []
                     let responsearr = response.wholeObject?["hits"] as? [AnyObject] ?? []
                     for i in 0...15 {
                         let individualresponse = responsearr[i] as? [String: AnyObject] ?? [:]
                         urlimagearr.append(individualresponse["webformatURL"] as? String ?? "")
-//                        urlimagearr.append(individualresponse["webformatURL"]!)
+                        
                     }
+//                    
+//                    for i in urlimagearr {
+//                        let randomimageview = UIImageView()
+//                        let url = URL(string: i)
+//                        let resource = ImageResource(downloadURL: url!, cacheKey: i)
+//                        randomimageview.kf.setImage(with: resource)
+//                        imageviewarr.append(randomimageview)
+//                    }
 
-                    let senderObjectInstance = SenderObject(urlimagearray: urlimagearr, tweetview: tweetView)
+                    let senderObjectInstance = SenderObject(urlimageviewarray: urlimagearr, tweetview: tweetView)
                     
                     self.loadinganime.stopAnimating()
                     self.performSegue(withIdentifier: "tomainview", sender: senderObjectInstance)
