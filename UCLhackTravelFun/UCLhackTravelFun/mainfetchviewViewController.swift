@@ -23,7 +23,6 @@ class mainfetchviewViewController: UIViewController {
         super.viewDidLoad()
         self.datatableview.dataSource = self
         if let post = data {
-            print(post)
             dataarray.append(post)
         }
         prepcell()

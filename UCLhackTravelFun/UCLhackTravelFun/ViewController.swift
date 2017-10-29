@@ -9,6 +9,7 @@
 import UIKit
 import NVActivityIndicatorView
 import TwitterKit
+import Alamofire
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -26,11 +27,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         loadinganime.startAnimating()
         
+        struct SenderObject {
+            var urlimagearray: [String]!
+            var tweetview: TWTRTweetView!
+        }
+        
         let client = TWTRAPIClient()
-        client.loadTweet(withID: "20") { (tweet, error) in
+        client.loadTweet(withID: "1345") { (tweet, error) in
             if let t = tweet {
                 let tweetView = TWTRTweetView(tweet: t)
-                self.performSegue(withIdentifier: "tomainview", sender: tweetView)
+                let imagefetchobject = FetchDestinationImages(destination: textField.text!)
+                
+                imagefetchobject.alamoFetch(completion: { response in
+                    print(response)
+                    
+                    let senderObjectInstance = SenderObject.init(urlimagearray: response.imageURLArray!, tweetview: tweetView)
+                    
+                    self.loadinganime.stopAnimating()
+                    self.performSegue(withIdentifier: "tomainview", sender: senderObjectInstance)
+
+                })
+                
             } else {
                 print("Failed to load Tweet: \(error?.localizedDescription ?? "")")
             }
