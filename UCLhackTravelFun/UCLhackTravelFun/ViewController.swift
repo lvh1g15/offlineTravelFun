@@ -11,6 +11,17 @@ import NVActivityIndicatorView
 import TwitterKit
 import Alamofire
 
+class SenderObject {
+    var urlimagearray: [String]!
+    var tweetview: TWTRTweetView!
+    
+    init(urlimagearray: [String], tweetview: TWTRTweetView) {
+        self.urlimagearray = urlimagearray
+        self.tweetview = tweetview
+    }
+}
+
+
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var gifearth: UIImageView!
@@ -27,11 +38,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         loadinganime.startAnimating()
         
-        struct SenderObject {
-            var urlimagearray: [String]!
-            var tweetview: TWTRTweetView!
-        }
-        
         let client = TWTRAPIClient()
         client.loadTweet(withID: "1345") { (tweet, error) in
             if let t = tweet {
@@ -39,9 +45,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let imagefetchobject = FetchDestinationImages(destination: textField.text!)
                 
                 imagefetchobject.alamoFetch(completion: { response in
-                    print(response)
-                    
-                    let senderObjectInstance = SenderObject.init(urlimagearray: response.imageURLArray!, tweetview: tweetView)
+
+                    var urlimagearr: [String] = []
+                    let responsearr = response.wholeObject?["hits"] as? [AnyObject] ?? []
+                    for i in 0...15 {
+                        let individualresponse = responsearr[i] as? [String: AnyObject] ?? [:]
+                        urlimagearr.append(individualresponse["webformatURL"] as? String ?? "")
+//                        urlimagearr.append(individualresponse["webformatURL"]!)
+                    }
+
+                    let senderObjectInstance = SenderObject(urlimagearray: urlimagearr, tweetview: tweetView)
                     
                     self.loadinganime.stopAnimating()
                     self.performSegue(withIdentifier: "tomainview", sender: senderObjectInstance)
@@ -57,7 +70,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tomainview" {
-            (segue.destination as! mainfetchviewViewController).data = sender as? TWTRTweetView            
+            (segue.destination as! mainfetchviewViewController).senderreceiver = sender as! SenderObject
         }
     }
 }

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EDEFBA7E1E6BFF2A52B119B841C9140</key>
+		<key>805ABE3530866CB9AD58A001BAA3EE3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E2589A80537EA1D4869403392083757</key>
+		<key>C3915B26DC3C72CF6D6C0899656ADE9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3915B26DC3C72CF6D6C0899656ADE9D</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCD79D51A99EA625EE56D599B48D736F</key>
+		<key>D411EF031CA515D5DF211A06E214D2D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF0BDD29AB0E5CC41D6B52CA7C9A3130</key>
 		<dict>
 			<key>primary</key>
 			<true/>

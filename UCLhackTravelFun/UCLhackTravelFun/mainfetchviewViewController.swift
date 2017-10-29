@@ -11,38 +11,55 @@ import TwitterKit
 
 class mainfetchviewViewController: UIViewController {
     
-    var data: TWTRTweetView?
     @IBOutlet weak var datatableview: UITableView!
-    var dataarray: [TWTRTweetView] = []
+    var tweetarray: [TWTRTweetView] = []
+    var photoarray: [String] = []
+    var state: Bool = false
     
-    let segueobject = {
-        ["destination": String(), "tweets": TWTRTweetView()]
-    }()
+    var senderreceiver: SenderObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.datatableview.dataSource = self
-        if let post = data {
-            dataarray.append(post)
+        if let post = senderreceiver {
+            tweetarray.append(post.tweetview)
+            photoarray = post.urlimagearray
+            print(tweetarray, photoarray)
         }
         prepcell()
+        prepcell2()
     }
     
     func prepcell() {
         let nib = UINib(nibName: "tweetcell", bundle: nil)
-        datatableview.register(nib, forCellReuseIdentifier: "event")
+        datatableview.register(nib, forCellReuseIdentifier: "tweet")
+    }
+
+    func prepcell2() {
+        let nib = UINib(nibName: "destinationimagenib", bundle: nil)
+        datatableview.register(nib, forCellReuseIdentifier: "randomimage")
     }
 }
 
 extension mainfetchviewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataarray.count
+        return tweetarray.count + photoarray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "event", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
-        let cells = dataarray[indexPath.row]
-        cell.configureCell(data: cells)
-        return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tweet", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
+        guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "randomimage", for: indexPath) as? destinationImageTableViewCell else { return UITableViewCell() }
+        
+        if state == true {
+            let imagecells = photoarray[indexPath.row]
+            cell2.configureDestinationImageView(imageURL: imagecells)
+            state = false
+            return cell2
+        } else {
+            let tweetcells = tweetarray[indexPath.row]
+            cell.configureCell(data: tweetcells)
+            state = true
+            return cell
+        }
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class destinationImageTableViewCell: UITableViewCell {
 
@@ -17,6 +18,7 @@ class destinationImageTableViewCell: UITableViewCell {
     }
     
     func configureDestinationImageView(imageURL: String) {
-        
+        let url = URL(string: imageURL)
+        destinationimageview.kf.setImage(with: url)
     }
 }
