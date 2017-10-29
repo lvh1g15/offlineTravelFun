@@ -11,6 +11,8 @@ import TwitterKit
 
 class dataCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var backview: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -19,6 +21,8 @@ class dataCellTableViewCell: UITableViewCell {
     }
     
     func configureCell(data: TWTRTweetView) {
-        print(data)
+        
+        self.backview.addSubview(data)
+        
     }
 }

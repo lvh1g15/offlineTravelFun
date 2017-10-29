@@ -13,7 +13,7 @@ class mainfetchviewViewController: UIViewController {
     
     var data: TWTRTweetView?
     @IBOutlet weak var datatableview: UITableView!
-    var dataarray: [TWTRTweetView]!
+    var dataarray: [TWTRTweetView] = []
     
     let segueobject = {
         ["destination": String(), "tweets": TWTRTweetView()]
@@ -21,8 +21,12 @@ class mainfetchviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.datatableview.dataSource = self
+        if let post = data {
+            print(post)
+            dataarray.append(post)
+        }
         prepcell()
-        dataarray.append(data!)
     }
     
     func prepcell() {
@@ -33,7 +37,7 @@ class mainfetchviewViewController: UIViewController {
 
 extension mainfetchviewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return dataarray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

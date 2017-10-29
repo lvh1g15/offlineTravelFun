@@ -63,16 +63,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="574" id="pyt-Np-hrh"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Jlt-7g-s8e" customClass="dataCellTableViewCell" customModule="UCLhackTravelFun" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jlt-7g-s8e" id="mQS-5z-QPA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="eht-Bd-x6A" id="ZeY-qo-7LB"/>
                                     <outlet property="delegate" destination="eht-Bd-x6A" id="FCq-SF-0xQ"/>
