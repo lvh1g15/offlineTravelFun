@@ -23,6 +23,9 @@
 		44281DA91FA55B84002467A5 /* destinationimagenib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44281DA81FA55B84002467A5 /* destinationimagenib.xib */; };
 		44281DAB1FA55C8E002467A5 /* destinationImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281DAA1FA55C8E002467A5 /* destinationImageTableViewCell.swift */; };
 		44281DAD1FA55E2A002467A5 /* fetchdestinationimages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44281DAC1FA55E2A002467A5 /* fetchdestinationimages.swift */; };
+		44281DB41FA6A213002467A5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44281DB31FA6A213002467A5 /* AVKit.framework */; };
+		44281DB61FA6A221002467A5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44281DB51FA6A221002467A5 /* MediaPlayer.framework */; };
+		44281DB81FA6A94F002467A5 /* introscreenuclhack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 44281DB71FA6A94F002467A5 /* introscreenuclhack.gif */; };
 		637432D6270008E165107C76 /* Pods_UCLhackTravelFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */; };
 		A345D29AB2964F46DA8AC636 /* Pods_UCLhackTravelFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +70,9 @@
 		44281DA81FA55B84002467A5 /* destinationimagenib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = destinationimagenib.xib; sourceTree = "<group>"; };
 		44281DAA1FA55C8E002467A5 /* destinationImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = destinationImageTableViewCell.swift; sourceTree = "<group>"; };
 		44281DAC1FA55E2A002467A5 /* fetchdestinationimages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fetchdestinationimages.swift; sourceTree = "<group>"; };
+		44281DB31FA6A213002467A5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		44281DB51FA6A221002467A5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		44281DB71FA6A94F002467A5 /* introscreenuclhack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = introscreenuclhack.gif; sourceTree = "<group>"; };
 		5034D8C6F03DB9932253ABC6 /* Pods-UCLhackTravelFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFun/Pods-UCLhackTravelFun.release.xcconfig"; sourceTree = "<group>"; };
 		9AE070542F95E92E97BEC4BE /* Pods-UCLhackTravelFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCLhackTravelFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCLhackTravelFunTests/Pods-UCLhackTravelFunTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLhackTravelFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44281DB61FA6A221002467A5 /* MediaPlayer.framework in Frameworks */,
+				44281DB41FA6A213002467A5 /* AVKit.framework in Frameworks */,
 				A345D29AB2964F46DA8AC636 /* Pods_UCLhackTravelFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +116,8 @@
 		2331FE69CDBE01CDAED021D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44281DB51FA6A221002467A5 /* MediaPlayer.framework */,
+				44281DB31FA6A213002467A5 /* AVKit.framework */,
 				BF42C74FF12A1D9D9F8F8D66 /* Pods_UCLhackTravelFun.framework */,
 				A5FD25A36860B89C58F2A07B /* Pods_UCLhackTravelFunTests.framework */,
 				AFC1CC078361ADA23411092F /* Pods_UCLhackTravelFunUITests.framework */,
@@ -210,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				44281D6C1FA4C449002467A5 /* ViewController.swift */,
+				44281DB71FA6A94F002467A5 /* introscreenuclhack.gif */,
 				44281D991FA4CD67002467A5 /* LocationDataView.swift */,
 				44281DAC1FA55E2A002467A5 /* fetchdestinationimages.swift */,
 			);
@@ -351,6 +362,7 @@
 				44281DA91FA55B84002467A5 /* destinationimagenib.xib in Resources */,
 				44281D9C1FA4D1B1002467A5 /* earth.png in Resources */,
 				44281DA31FA54AB8002467A5 /* tweetcell.xib in Resources */,
+				44281DB81FA6A94F002467A5 /* introscreenuclhack.gif in Resources */,
 				44281D751FA4C449002467A5 /* LaunchScreen.storyboard in Resources */,
 				44281D721FA4C449002467A5 /* Assets.xcassets in Resources */,
 				44281D701FA4C449002467A5 /* Main.storyboard in Resources */,

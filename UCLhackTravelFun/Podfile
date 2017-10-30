@@ -11,7 +11,8 @@ target 'UCLhackTravelFun' do
   pod 'SwiftGifOrigin', '~> 1.6.1'
   pod 'NVActivityIndicatorView'
   pod 'TwitterKit'
-  pod ‘Kingfisher’
+  pod 'Kingfisher'
+  pod 'Gifu'
 
   target 'UCLhackTravelFunTests' do
     inherit! :search_paths

@@ -20,24 +20,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth.png" translatesAutoresizingMaskIntoConstraints="NO" id="tzs-bJ-3lp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="tintColor" red="0.13250529766082764" green="0.22609449923038483" blue="0.27461686730384827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="bed-TC-7Ie"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="tzs-bJ-3lp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2p1-i3-kKA"/>
-                            <constraint firstItem="tzs-bJ-3lp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hsv-7J-i17"/>
-                            <constraint firstItem="tzs-bJ-3lp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oaP-cm-oey"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="gifearth" destination="tzs-bJ-3lp" id="rwp-BN-QzY"/>
                         <segue destination="Gi8-3S-kHE" kind="presentation" identifier="tomainview" id="JCf-Rc-NIf"/>
                     </connections>
                 </viewController>
@@ -85,7 +70,4 @@
             <point key="canvasLocation" x="704.79999999999995" y="142.57871064467767"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="earth.png" width="539" height="960"/>
-    </resources>
 </document>
