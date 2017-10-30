@@ -15,18 +15,26 @@ class mainfetchviewViewController: UIViewController {
     var tweetarray: [TWTRTweetView] = []
     var photoarray: [String] = []
     var state: Bool = false
-    
+    var bigarr: [[Int: AnyObject]] = []
     var senderreceiver: SenderObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.datatableview.dataSource = self
         if let post = senderreceiver {
-            tweetarray.append(post.tweetview)
+            let dictinstance = [0: post.tweetview]
+            bigarr.append(dictinstance as [Int : AnyObject])
             photoarray = post.urlimageviewarray
-            print(tweetarray, photoarray)
+            var c = 1
+            for i in photoarray {
+                let dictinstance2 = [c: i]
+                bigarr.append(dictinstance2 as [Int : AnyObject])
+                c += 1
+            }
         }
-//        prepcell()
+        
+        print(bigarr)
+        
         prepcell2()
         prepcell()
     }
@@ -44,19 +52,28 @@ class mainfetchviewViewController: UIViewController {
 
 extension mainfetchviewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photoarray.count
+        return bigarr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tweet", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
+        var tag = 1
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tweet", for: indexPath) as? dataCellTableViewCell else { return UITableViewCell() }
         guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "randomimage", for: indexPath) as? destinationImageTableViewCell else { return UITableViewCell() }
         
-        let imagecells = photoarray[indexPath.row]
-        cell2.configureDestinationImageView(imageURL: imagecells)
-        return cell2
-
-//        let tweetcells = tweetarray[indexPath.row]
-//        cell.configureCell(data: tweetcells)
-//        return cell
+        let imagecells = bigarr[indexPath.row]
+        for (key, value) in imagecells {
+            if key > 0 {
+                cell2.configureDestinationImageView(imageURL: value as! String)
+            } else {
+                cell.configureCell(data: value as! TWTRTweetView)
+                tag = 2
+            }
+        }
+        if tag == 1 {
+            return cell2
+        }
+        else {
+            return cell
+        }
     }
 }
